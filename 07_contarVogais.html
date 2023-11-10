@@ -7,11 +7,20 @@
     */
 
     //Entrada
-
+    let palavra = prompt(`Informe uma palavra para contar a quantidade de vogais:`).toLowerCase();
 
     //Processamento
-
+    function contador(palavra) {
+        let contagem = 0;
+        for (l of palavra) {
+            if (l == "a" || l == "e" || l == "i" || l == "o" || l == "u") {
+                contagem++
+            }
+        }
+        return (contagem);
+    }
 
     //Saída
+    document.write(`A palavra "${palavra}" contém ${contador(palavra)} vogais.`);
 
 </script>

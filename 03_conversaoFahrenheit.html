@@ -6,11 +6,14 @@
     */
 
     //Entrada
-
+    let temperatura = Number(prompt(`Informe a temperatura em Graus Celsius a ser convertida em Fahrenheit:`));
 
     //Processamento
-
+    function conversao(temperatura) {
+        return ((9 * temperatura + 160) / 5)
+    }
 
     //Saída
+    document.write(`${conversao(temperatura)}°F.`);
 
 </script>

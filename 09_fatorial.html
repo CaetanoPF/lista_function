@@ -5,11 +5,18 @@
     */
 
     //Entrada
-
+    let num = parseInt(prompt(`Informe um número para ser fatorado:`));
 
     //Processamento
-
+    function fatorar(num) {
+        if (num == 0) {
+            return (1);
+        } else {
+            return (num * fatorar(num - 1))
+        }
+    }
 
     //Saída
+    document.write(`Resultado do número ${num} fatorado: ${fatorar(num)}.`);
 
 </script>

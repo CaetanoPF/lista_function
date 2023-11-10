@@ -8,11 +8,17 @@
     */
 
     //Entrada
-
+    let raio = Number(prompt(`Informe o tamanho do raio em cm:`));
 
     //Processamento
-
+    function perimetro(raio) {
+        return (2 * Math.PI * raio);
+    };
+    function area(raio) {
+        return (Math.PI * (raio ** 2));
+    };
 
     //Saída
+    document.write(`O perímetro é: ${perimetro(raio)} cm. <br> A área é ${area(raio)} cm².`);
 
 </script>

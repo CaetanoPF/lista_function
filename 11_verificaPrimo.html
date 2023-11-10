@@ -5,11 +5,18 @@
     */
 
     //Entrada
-
+    let num = Number(prompt(`Informe um número para verificar se é um número primo:`));
 
     //Processamento
-
+    function verificar(num) {
+        let verificador = 0
+        for (i = 1; i <= num; i++) {
+            if (num % i == 0) { verificador++ }
+        }
+        if (verificador <= 2) { return (`O número ${num} é primo!`) } else { return (`O número ${num} não é primo!`) }
+    }
 
     //Saída
+    document.write(verificar(num));
 
 </script>

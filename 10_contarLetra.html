@@ -6,11 +6,22 @@
     */
 
     //Entrada
-
+    let frase = prompt(`Informe a sua frase:`);
+    let letra = prompt(`Informe a letra que deseja contar:`);
 
     //Processamento
-
+    function repetidas(frase, letra) {
+        contador = 0
+        for (l of frase) {
+            if (l == letra) {
+                contador++
+            }
+        }
+        return (contador)
+    }
 
     //Saída
+    document.write(`A letra se repete ${repetidas(frase, letra)} vezes.`);
+
 
 </script>
